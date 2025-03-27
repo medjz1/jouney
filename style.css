@@ -8,7 +8,7 @@ body {
 .map-container {
     width: 200vw;
     height: 100vh;
-    background: url('map.jpg') no-repeat center center/cover;
+    background: url('map.png') no-repeat center center/cover;
     position: relative;
 }
 
