@@ -6,11 +6,17 @@ body {
 }
 
 .map-container {
-    width: 200vw;
+    width: 100vw;
     height: 100vh;
-    background: url('map.png') no-repeat center center/cover;
+    background: url('map.png') no-repeat center center;
+    background-size: cover;
     position: relative;
+    overflow: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+
 
 .marker {
     position: absolute;
