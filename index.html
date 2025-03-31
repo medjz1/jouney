@@ -3,15 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Our Journey</title>
+    <title>Our Journey Together ❤️🗺️</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="map-container" id="map">
-        <div class="marker" style="top: 30%; left: 40%;" data-message="This was our first date!"></div>
-        <div class="marker" style="top: 60%; left: 70%;" data-message="Our first trip together!"></div>
-        <div class="marker" style="top: 80%; left: 20%;" data-message="A challenge we overcame."></div>
+    <div class="container">
+        <h1>Our Journey Together ❤️</h1>
+        
+        <div class="map-container">
+            <img src="map.png" alt="Our Love Map" class="map-image">
+            
+            <!-- Clickable Areas (adjust positions based on your map) -->
+            <div class="clickable-area mountain" style="top: 20%; left: 30%"></div>
+            <div class="clickable-area river" style="top: 45%; left: 55%"></div>
+            <div class="clickable-area star" style="top: 70%; left: 15%"></div>
+        </div>
+
+        <!-- Modal for messages -->
+        <div id="memoryModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <div id="modalText"></div>
+            </div>
+        </div>
     </div>
+
     <script src="script.js"></script>
 </body>
 </html>
