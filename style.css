@@ -1,38 +1,90 @@
-/* style.css */
 body {
     margin: 0;
-    overflow: hidden;
-    font-family: Arial, sans-serif;
+    padding: 20px;
+    background-color: #1a1a2e;
+    color: #fff;
+    font-family: 'Arial', sans-serif;
+    overflow-x: hidden;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+h1 {
+    color: #ff69b4;
+    margin-bottom: 30px;
 }
 
 .map-container {
-    width: 100vw;
-    height: 100vh;
-    background: url('map.png') no-repeat center center;
-    background-size: cover;
     position: relative;
     overflow: auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    max-width: 1000px;
+    margin: 0 auto;
+    border: 3px solid #ff69b4;
+    border-radius: 10px;
 }
 
+.map-image {
+    width: 2000px;
+    height: 2000px;
+}
 
-.marker {
+.clickable-area {
     position: absolute;
-    cursor: pointer;
-    background-color: rgb(63, 120, 142);
-    width: 10px;
-    height: 10px;
+    width: 50px;
+    height: 50px;
     border-radius: 50%;
-    transform: translate(-50%, -50%);
+    cursor: pointer;
+    transition: transform 0.3s ease;
 }
 
-.message {
+.clickable-area:hover {
+    transform: scale(1.2);
+}
+
+.mountain {
+    background-color: rgba(255, 105, 180, 0.3);
+}
+
+.river {
+    background-color: rgba(0, 191, 255, 0.3);
+}
+
+.star {
+    background-color: rgba(255, 215, 0, 0.3);
+}
+
+.modal {
     display: none;
-    position: absolute;
-    background: white;
-    padding: 10px;
-    border-radius: 5px;
-    box-shadow: 0px 0px 10px rgba(0,0,0,0.3);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.7);
+}
+
+.modal-content {
+    background-color: #1a1a2e;
+    margin: 15% auto;
+    padding: 20px;
+    border: 2px solid #ff69b4;
+    width: 70%;
+    max-width: 500px;
+    border-radius: 10px;
+    position: relative;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+.close:hover {
+    color: #fff;
 }
