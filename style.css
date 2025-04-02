@@ -76,8 +76,8 @@ h1 {
 }
 
 .star {
-    background-color: rgba(255, 105, 180, 0.2);
-    border: 1px solid #ff69b4;
+    background-color: rgba(255, 215, 0, 0.2);
+    border: 1px solid #ffd700;
 }
 
 .modal {
@@ -92,15 +92,9 @@ h1 {
 }
 
 .modal-content {
+    border: 2px solid #ff69b4 !important;
     background: linear-gradient(145deg, #1a1a2e, #2a2a4a);
-    margin: 15% auto;
-    padding: 30px;
-    border: 2px solid #ff0000;
-    width: 60%;
-    max-width: 500px;
-    border-radius: 15px;
-    position: relative;
-    animation: modalOpen 0.3s ease-out;
+    box-shadow: 0 0 15px rgba(255, 105, 180, 0.4);
 }
 
 .modal-content.shared-dream {
@@ -129,8 +123,7 @@ h1 {
 }
 
 #modalText h2 {
-    color: #ff0000;
-    margin-bottom: 15px;
+    color: #ff69b4 !important;
 }
 
 #modalText .pink-title {
