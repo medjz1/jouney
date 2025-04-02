@@ -2,69 +2,37 @@ document.addEventListener('DOMContentLoaded', () => {
     const modal = document.getElementById('memoryModal');
     const span = document.getElementsByClassName("close")[0];
     const modalText = document.getElementById('modalText');
+    const modalContent = document.querySelector('.modal-content');
 
-    // Define your messages here
     const memories = {
-    mountain1: {
-        title: "First Challenge Together",
-        content: "Remember when we... [your first mountain message]"
-    },
-    mountain2: {
-        title: "Biggest Obstacle",
-        content: "That time we... [your second mountain message]"
-    },
-    mountain3: {
-        title: "Recent Triumph",
-        content: "I'm so proud we... [your third mountain message]"
-    },
-    river1: {
-        title: "First Big Change",
-        content: "When we decided to... [your first river message]"
-    },
-    river2: {
-        title: "Growing Together",
-        content: "The way we... [your second river message]"
-    },
-    river3: {
-        title: "Current Transition",
-        content: "As we... [your third river message]"
-    },
-    star1: {
-        title: "Shared Dream 1",
-        content: "I can't wait until we... [first star message]"
-    },
-    star2: {
-        title: "Shared Dream 2",
-        content: "One day we'll... [second star message]"
-    },
-    star3: {
-        title: "Shared Dream 3",
-        content: "I envision us... [third star message]"
-    },
-    star4: {
-        title: "Shared Dream 4",
-        content: "Our plan to... [fourth star message]"
-    },
-    star5: {
-        title: "Shared Dream 5",
-        content: "Someday we'll... [fifth star message]"
-    }
-};
+        mountain1: { /* Add your messages */ },
+        mountain2: { /* ... */ },
+        mountain3: { /* ... */ },
+        river1: { /* ... */ },
+        river2: { /* ... */ },
+        river3: { /* ... */ },
+        star1: { /* ... */ },
+        star2: { /* ... */ },
+        star3: { /* ... */ },
+        star4: { /* ... */ },
+        star5: { /* ... */ }
+    };
 
-// Update the click handler
-document.querySelectorAll('.clickable-area').forEach(area => {
-    area.addEventListener('click', (e) => {
-        const id = e.target.id;
-        modalText.innerHTML = `
-            <h2>${memories[id].title}</h2>
-            <p>${memories[id].content}</p>
-            <img src="heart.png" alt="Heart" style="width: 30px;">
-        `;
-        modal.style.display = 'block';
+    document.querySelectorAll('.clickable-area').forEach(area => {
+        area.addEventListener('click', (e) => {
+            const id = e.target.id;
+            const isStar = e.target.classList.contains('star');
+            
+            modalContent.classList.toggle('shared-dream', isStar);
+            modalText.innerHTML = `
+                <h2 class="${isStar ? 'pink-title' : ''}">${memories[id].title}</h2>
+                <p>${memories[id].content}</p>
+                <img src="${isStar ? 'pink-heart.png' : 'red-heart.png'}" alt="Heart" style="width: 25px;">
+            `;
+            modal.style.display = 'block';
+        });
     });
-});
 
-    // Close modal
     span.onclick = () => modal.style.display = 'none';
     window.onclick = (event) => {
         if (event.target == modal) modal.style.display = 'none';
