@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const memories = {
         mountain1: {
             title: "First Challenge",
-            content: "Deciding to go through this together despite the distance and the journey lying ahead was a definitely a big step that i'm proud of",
+            content: "Deciding to go through this together despite the distance and the journey lying ahead was definitely a big step that i'm proud of",
             heart: "red-heart.png"
         },
         mountain2: {
@@ -27,7 +27,7 @@ document.addEventListener('DOMContentLoaded', () => {
         },
         river3: {
             title: "Current Transition",
-            content: "I'm working on my sleep and time schudule in general, i want to be have as much time as possible with my beloved",
+            content: "I'm working on my sleep and mostly my time schudule in general, i want to be have as much time as possible with my dearest",
             heart: "red-heart.png"
         },
         star1: {
@@ -47,7 +47,7 @@ document.addEventListener('DOMContentLoaded', () => {
         },
         star4: {
             title: "Dream 4",
-            content: "THe dream where i basically see our future and how we get married is great too, insha'allah things turn out like that",
+            content: "The dream where i basically see our future and how we get married is great too, insha'allah things turn out like that",
             heart: "pink-heart.png"
         },
         star5: {
