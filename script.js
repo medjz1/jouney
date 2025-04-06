@@ -33,27 +33,27 @@ document.addEventListener('DOMContentLoaded', () => {
         star1: {
             title: "Dream 1",
             content: "The first intimate dream i had about us wasn't that crazy but it's still very special, i remember how my heart was racing",
-            heart: "pink-heart.png"
+            heart: "red-heart.png"
         },
         star2: {
             title: "Dream 2",
             content: "I keep remembering the Hu Tao one randomly, oh and i won't forget about you wearing her costume for me one day",
-            heart: "pink-heart.png"
+            heart: "red-heart.png"
         },
         star3: {
             title: "Dream 3",
             content: "I love our hug and cuddle/ calm and cute dreams, nothing too wild, just us enjoying each other's company",
-            heart: "pink-heart.png"
+            heart: "red-heart.png"
         },
         star4: {
             title: "Dream 4",
             content: "The dream where i basically see our future and how we get married is great too, insha'allah things turn out like that",
-            heart: "pink-heart.png"
+            heart: "red-heart.png"
         },
         star5: {
             title: "Dream 5",
             content: "I love the teasing dreams too 🙃, not my fault you look so cute when we mess around",
-            heart: "pink-heart.png"
+            heart: "red-heart.png"
         }
     };
 
